@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Diabetes Interface</title>
+</head>
+<body>
+    <form id="mainForm" method="post">
+        <input type="hidden" id="selectedFileName" name="selectedFileName">
+    </form>
+    <div>
+        <h2>Diabetes Prediction</h2>
+    </div>
+    <div class="mainContainer">
+        <div class="loadButtonContainer">
+            <label for="loadDataBtn">Choose Prediction File</label>
+            <input type="file"  id="loadDataBtn" >
+        </div>
+        <div id="dataTableDiv" class="predictTableDiv">
+            <table id="predDataTable" class="predictionDataTable">
+                <!-- Table filled dynamically when user chooses csv file-->
+            </table>
+        </div>
+        <div class="predictBtnContainer">
+            <input type="button" value="Run Predictions" id="predictBtn" class="predictBtn">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}" charset="utf-8"></script>
+</body>
+</html>

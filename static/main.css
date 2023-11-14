@@ -1,0 +1,45 @@
+h2{
+    text-align: left;
+    margin-left: 100px;
+}
+.mainContainer{
+    padding: 5px;
+    width: 1200px;
+    border: 4px solid black;
+    border-radius: 5px;
+    font-family: Arial;
+}
+.loadButtonContainer{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 20px;
+
+}
+input[type=file]::file-selector-button {
+    border: 2px solid;
+    padding: .2em .4em;
+    border-radius: .2em;
+    transition: 1s;
+}
+
+.predictTableDiv{
+    width: 100%;
+}
+.predictionDataTable th,td{
+    border: 1px solid;
+    text-align: right;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.predictionDataTable{
+    border-collapse: collapse;
+}
+.predictBtn{
+    display: none;
+}
+.predictBtnContainer{
+    padding-top: 20px;
+}
+.redColor{
+    color: red;
+}
