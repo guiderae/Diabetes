@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    <title>Training</title>
+</head>
+<body>
+    <div>
+        <h2>Diabetes Model Training</h2>
+    </div>
+    <div class="mainContainer">
+        <form  id="mainForm" name="mainForm" method="post">
+            <div id="inputDiv" name="inputDiv" class="inputContainer">
+
+                    <label for="hidden1">Nodes in Layer 1</label>
+                    <input type="text" id="hidden1" name="hidden1" value="6"><br>
+                    <label for="hidden2">Nodes in Layer 2</label>
+                    <input type="text" id="hidden2" name="hidden2" value="6"><br>
+                    <label for="hidden3">Nodes in Layer 3</label>
+                    <input type="text" id="hidden3" name="hidden3" value="0"><br>
+                    <label for="hidden1">Nodes in Layer 4</label>
+                    <input type="text" id="hidden4" name="hidden4" value="0"><br>
+
+                    <label for="learningRate">Learning Rate</label>
+                    <input type="text" id="learningRate" name="learningRate" value="0.01" ><br>
+
+                    <label for="epochs">Number of Epochs</label>
+                    <input type="text" id="epochs" name="epochs" value="100" ><br>
+                <p></p><p></p>
+                <p>
+                    <input type="button" value="Train and Test" class="button" id="makeGraphBtn" >
+                </p>
+            </div>
+        </form>
+        <div id="graphContainer" class="graphContainer" >
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='mainFunctionality.js') }}" charset="utf-8"></script>
+</body>
+</html>
